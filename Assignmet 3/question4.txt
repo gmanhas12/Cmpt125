@@ -1,0 +1,26 @@
+/*
+CMPT 125 Assignment 3 Question 4
+Author: Gagan Manhas
+Student ID: 301430394
+SFU email: gma54@sfu.ca
+Academic honesty statement: I hereby confirm that this is my own work and I have
+not violated any of SFU’s Code of Academic Integrity and Good Conduct (S10.01).
+Description: write the recursive formula of its time complexity and  derive the time complexity of the recursive Binary Search algorithm
+*/
+
+
+Recursive Formula
+T(1) = 2
+T(2) = T(1) + 1 = 3  
+T(n) = T(n/2) + 1 
+
+Time Complexity
+T(n)=T(n/2) + 1
+T(n/2)= T(n/4) + 1 + 1
+T(n)=T(n/4)+1+1..T(n/2^k)+1+1+1..+1
+T(2^k/2^k)+1+1...+1
+T(1)+k
+2^k=n
+K = log n
+=  O(log n)
+
